@@ -1,0 +1,380 @@
+Prefix(:=<http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7>
+
+Declaration(Class(:Admin_code))
+Declaration(Class(:Co_ordinate))
+Declaration(Class(:Country_code))
+Declaration(Class(:GeonameID))
+Declaration(Class(:Names))
+Declaration(ObjectProperty(:Admin_codes_geoID))
+Declaration(ObjectProperty(:co_ordinates_geoID))
+Declaration(ObjectProperty(:has_countryCode))
+Declaration(ObjectProperty(:names_of_geoID))
+Declaration(DataProperty(:hasElevation))
+Declaration(DataProperty(:hasPopulation))
+Declaration(DataProperty(:has_admin1))
+Declaration(DataProperty(:has_admin2))
+Declaration(DataProperty(:has_admin3))
+Declaration(DataProperty(:has_admin4))
+Declaration(DataProperty(:has_alternateName))
+Declaration(DataProperty(:has_asciiName))
+Declaration(DataProperty(:has_cc2))
+Declaration(DataProperty(:has_dem))
+Declaration(DataProperty(:has_featureClass))
+Declaration(DataProperty(:has_featureCode))
+Declaration(DataProperty(:has_latitude))
+Declaration(DataProperty(:has_longitude))
+Declaration(DataProperty(:has_modificationDate))
+Declaration(DataProperty(:has_names))
+Declaration(DataProperty(:has_timeZone))
+Declaration(NamedIndividual(:Admin_code))
+Declaration(NamedIndividual(:Admin_code_110))
+Declaration(NamedIndividual(:Admin_code_245))
+Declaration(NamedIndividual(:Admin_code_367))
+Declaration(NamedIndividual(:Admin_code_929))
+Declaration(NamedIndividual(:Co_ordinates))
+Declaration(NamedIndividual(:Co_ordinates_110))
+Declaration(NamedIndividual(:Co_ordinates_245))
+Declaration(NamedIndividual(:Co_ordinates_367))
+Declaration(NamedIndividual(:Co_ordinates_929))
+Declaration(NamedIndividual(:IE))
+Declaration(NamedIndividual(:Names))
+Declaration(NamedIndividual(:Names_110))
+Declaration(NamedIndividual(:Names_245))
+Declaration(NamedIndividual(:Names_367))
+Declaration(NamedIndividual(:Names_929))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2635367>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2642090>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2643245>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649110>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649929>))
+############################
+#   Object Properties
+############################
+
+# Object Property: :Admin_codes_geoID (:Admin_codes_geoID)
+
+ObjectPropertyDomain(:Admin_codes_geoID :GeonameID)
+ObjectPropertyRange(:Admin_codes_geoID :Admin_code)
+
+# Object Property: :co_ordinates_geoID (:co_ordinates_geoID)
+
+ObjectPropertyDomain(:co_ordinates_geoID :GeonameID)
+ObjectPropertyRange(:co_ordinates_geoID :Co_ordinate)
+
+# Object Property: :has_countryCode (:has_countryCode)
+
+ObjectPropertyDomain(:has_countryCode :GeonameID)
+ObjectPropertyRange(:has_countryCode :Country_code)
+
+# Object Property: :names_of_geoID (:names_of_geoID)
+
+ObjectPropertyDomain(:names_of_geoID :GeonameID)
+ObjectPropertyRange(:names_of_geoID :Names)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :hasElevation (:hasElevation)
+
+DataPropertyDomain(:hasElevation :GeonameID)
+DataPropertyRange(:hasElevation xsd:float)
+
+# Data Property: :hasPopulation (:hasPopulation)
+
+DataPropertyDomain(:hasPopulation :GeonameID)
+DataPropertyRange(:hasPopulation xsd:string)
+
+# Data Property: :has_admin1 (:has_admin1)
+
+SubDataPropertyOf(:has_admin1 owl:topDataProperty)
+DataPropertyDomain(:has_admin1 :Admin_code)
+DataPropertyRange(:has_admin1 xsd:string)
+
+# Data Property: :has_admin2 (:has_admin2)
+
+SubDataPropertyOf(:has_admin2 owl:topDataProperty)
+DataPropertyDomain(:has_admin2 :Admin_code)
+DataPropertyRange(:has_admin2 xsd:string)
+
+# Data Property: :has_admin3 (:has_admin3)
+
+SubDataPropertyOf(:has_admin3 owl:topDataProperty)
+DataPropertyDomain(:has_admin3 :Admin_code)
+DataPropertyRange(:has_admin3 xsd:string)
+
+# Data Property: :has_admin4 (:has_admin4)
+
+SubDataPropertyOf(:has_admin4 owl:topDataProperty)
+DataPropertyDomain(:has_admin4 :Admin_code)
+DataPropertyRange(:has_admin4 xsd:string)
+
+# Data Property: :has_alternateName (:has_alternateName)
+
+SubDataPropertyOf(:has_alternateName owl:topDataProperty)
+DataPropertyDomain(:has_alternateName :Names)
+DataPropertyRange(:has_alternateName xsd:string)
+
+# Data Property: :has_asciiName (:has_asciiName)
+
+SubDataPropertyOf(:has_asciiName owl:topDataProperty)
+DataPropertyDomain(:has_asciiName :Names)
+DataPropertyRange(:has_asciiName xsd:string)
+
+# Data Property: :has_cc2 (:has_cc2)
+
+SubDataPropertyOf(:has_cc2 owl:topDataProperty)
+DataPropertyDomain(:has_cc2 :Admin_code)
+DataPropertyRange(:has_cc2 xsd:string)
+
+# Data Property: :has_dem (:has_dem)
+
+DataPropertyDomain(:has_dem :GeonameID)
+DataPropertyRange(:has_dem xsd:integer)
+
+# Data Property: :has_featureClass (:has_featureClass)
+
+DataPropertyDomain(:has_featureClass :GeonameID)
+DataPropertyRange(:has_featureClass xsd:string)
+
+# Data Property: :has_featureCode (:has_featureCode)
+
+DataPropertyDomain(:has_featureCode :GeonameID)
+DataPropertyRange(:has_featureCode xsd:string)
+
+# Data Property: :has_latitude (:has_latitude)
+
+SubDataPropertyOf(:has_latitude owl:topDataProperty)
+DataPropertyDomain(:has_latitude :Co_ordinate)
+DataPropertyRange(:has_latitude xsd:float)
+
+# Data Property: :has_longitude (:has_longitude)
+
+SubDataPropertyOf(:has_longitude owl:topDataProperty)
+DataPropertyDomain(:has_longitude :Co_ordinate)
+DataPropertyRange(:has_longitude xsd:float)
+
+# Data Property: :has_modificationDate (:has_modificationDate)
+
+DataPropertyDomain(:has_modificationDate :GeonameID)
+DataPropertyRange(:has_modificationDate xsd:dateTime)
+
+# Data Property: :has_names (:has_names)
+
+SubDataPropertyOf(:has_names owl:topDataProperty)
+DataPropertyDomain(:has_names :Names)
+DataPropertyRange(:has_names xsd:string)
+
+# Data Property: :has_timeZone (:has_timeZone)
+
+DataPropertyDomain(:has_timeZone :GeonameID)
+DataPropertyRange(:has_timeZone xsd:string)
+
+
+############################
+#   Datatypes
+############################
+
+# Datatype: xsd:string (xsd:string)
+
+DatatypeDefinition(xsd:string xsd:integer)
+DatatypeDefinition(xsd:string xsd:string)
+
+
+############################
+#   Classes
+############################
+
+# Class: :Admin_code (:Admin_code)
+
+SubClassOf(:Admin_code :GeonameID)
+
+# Class: :Co_ordinate (:Co_ordinate)
+
+SubClassOf(:Co_ordinate :GeonameID)
+
+# Class: :Country_code (:Country_code)
+
+SubClassOf(:Country_code :GeonameID)
+
+# Class: :Names (:Names)
+
+SubClassOf(:Names :GeonameID)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :Admin_code (:Admin_code)
+
+ClassAssertion(:Admin_code :Admin_code)
+DataPropertyAssertion(:has_admin1 :Admin_code "C"^^xsd:string)
+DataPropertyAssertion(:has_admin2 :Admin_code "14.0"^^xsd:string)
+DataPropertyAssertion(:has_cc2 :Admin_code "GB"^^xsd:string)
+
+# Individual: :Admin_code_110 (:Admin_code_110)
+
+ClassAssertion(:Admin_code :Admin_code_110)
+DataPropertyAssertion(:has_cc2 :Admin_code_110 "IE,GB"^^xsd:string)
+
+# Individual: :Admin_code_245 (:Admin_code_245)
+
+ClassAssertion(:Admin_code :Admin_code_245)
+DataPropertyAssertion(:has_admin1 :Admin_code_245 "00"^^xsd:string)
+DataPropertyAssertion(:has_cc2 :Admin_code_245 "IE,GB"^^xsd:string)
+
+# Individual: :Admin_code_367 (:Admin_code_367)
+
+ClassAssertion(:Admin_code :Admin_code_367)
+DataPropertyAssertion(:has_admin1 :Admin_code_367 "00"^^xsd:string)
+DataPropertyAssertion(:has_cc2 :Admin_code_367 "IE,GB"^^xsd:string)
+
+# Individual: :Admin_code_929 (:Admin_code_929)
+
+ClassAssertion(:Admin_code :Admin_code_929)
+
+# Individual: :Co_ordinates (:Co_ordinates)
+
+ClassAssertion(:Co_ordinate :Co_ordinates)
+DataPropertyAssertion(:has_latitude :Co_ordinates "54.33333"^^xsd:float)
+DataPropertyAssertion(:has_longitude :Co_ordinates "-7.98333"^^xsd:float)
+
+# Individual: :Co_ordinates_110 (:Co_ordinates_110)
+
+ClassAssertion(:Co_ordinate :Co_ordinates_110)
+DataPropertyAssertion(:has_latitude :Co_ordinates_110 "54.98532"^^xsd:float)
+DataPropertyAssertion(:has_longitude :Co_ordinates_110 "-7.33277"^^xsd:float)
+
+# Individual: :Co_ordinates_245 (:Co_ordinates_245)
+
+ClassAssertion(:Co_ordinate :Co_ordinates_245)
+DataPropertyAssertion(:has_latitude :Co_ordinates_245 "54.3"^^xsd:float)
+DataPropertyAssertion(:has_longitude :Co_ordinates_245 "-7.93333"^^xsd:float)
+
+# Individual: :Co_ordinates_367 (:Co_ordinates_367)
+
+ClassAssertion(:Co_ordinate :Co_ordinates_367)
+DataPropertyAssertion(:has_latitude :Co_ordinates_367 "54.68333"^^xsd:float)
+DataPropertyAssertion(:has_longitude :Co_ordinates_367 "-7.65"^^xsd:float)
+
+# Individual: :Co_ordinates_929 (:Co_ordinates_929)
+
+ClassAssertion(:Co_ordinate :Co_ordinates_929)
+DataPropertyAssertion(:has_latitude :Co_ordinates_929 "54.50534"^^xsd:float)
+DataPropertyAssertion(:has_longitude :Co_ordinates_929 "-8.24507"^^xsd:float)
+
+# Individual: :IE (:IE)
+
+ClassAssertion(:Country_code :IE)
+
+# Individual: :Names (:Names)
+
+ClassAssertion(:Names :Names)
+DataPropertyAssertion(:has_alternateName :Names "Tullyrosmearn,Tullyrossmearan"^^xsd:string)
+DataPropertyAssertion(:has_asciiName :Names "Tullyrossmearan"^^xsd:string)
+DataPropertyAssertion(:has_names :Names "Tullyrossmearan"^^xsd:string)
+
+# Individual: :Names_110 (:Names_110)
+
+ClassAssertion(:Names :Names_110)
+DataPropertyAssertion(:has_alternateName :Names_110 "An Feabhal,Foyle,River Foyle"^^xsd:string)
+DataPropertyAssertion(:has_asciiName :Names_110 "River Foyle"^^xsd:string)
+DataPropertyAssertion(:has_names :Names_110 "River Foyle"^^xsd:string)
+
+# Individual: :Names_245 (:Names_245)
+
+ClassAssertion(:Names :Names_245)
+DataPropertyAssertion(:has_alternateName :Names_245 "Lough Macnean,Lough Macnean Upper"^^xsd:string)
+DataPropertyAssertion(:has_asciiName :Names_245 "Lough Macnean Upper"^^xsd:string)
+DataPropertyAssertion(:has_names :Names_245 "Lough Macnean Upper"^^xsd:string)
+
+# Individual: :Names_367 (:Names_367)
+
+ClassAssertion(:Names :Names_367)
+DataPropertyAssertion(:has_alternateName :Names_367 "Mourne Beg,Mourne Beg River"^^xsd:string)
+DataPropertyAssertion(:has_asciiName :Names_367 "Mourne Beg River"^^xsd:string)
+DataPropertyAssertion(:has_names :Names_367 "Mourne Beg River"^^xsd:string)
+
+# Individual: :Names_929 (:Names_929)
+
+ClassAssertion(:Names :Names_929)
+DataPropertyAssertion(:has_alternateName :Names_929 "River Erne"^^xsd:string)
+DataPropertyAssertion(:has_asciiName :Names_929 "River Erne"^^xsd:string)
+DataPropertyAssertion(:has_names :Names_929 "River Erne"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2635367> (<http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2635367>)
+
+ClassAssertion(:GeonameID <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2635367>)
+ObjectPropertyAssertion(:Admin_codes_geoID <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2635367> :Admin_code_367)
+ObjectPropertyAssertion(:co_ordinates_geoID <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2635367> :Co_ordinates_367)
+ObjectPropertyAssertion(:names_of_geoID <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2635367> :Names_367)
+DataPropertyAssertion(:hasElevation <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2635367> "NaN"^^xsd:float)
+DataPropertyAssertion(:hasPopulation <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2635367> "0"^^xsd:integer)
+DataPropertyAssertion(:has_dem <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2635367> "53"^^xsd:integer)
+DataPropertyAssertion(:has_featureClass <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2635367> "PPL")
+DataPropertyAssertion(:has_featureCode <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2635367> "P")
+DataPropertyAssertion(:has_modificationDate <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2635367> "2015-05-15")
+DataPropertyAssertion(:has_timeZone <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2635367> "Europe/Dublin")
+
+# Individual: <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2642090> (<http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2642090>)
+
+ClassAssertion(:GeonameID <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2642090>)
+ObjectPropertyAssertion(:Admin_codes_geoID <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2642090> :Admin_code)
+ObjectPropertyAssertion(:co_ordinates_geoID <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2642090> :Co_ordinates)
+ObjectPropertyAssertion(:names_of_geoID <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2642090> :Names)
+DataPropertyAssertion(:hasPopulation <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2642090> "0"^^xsd:integer)
+DataPropertyAssertion(:has_dem <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2642090> "73"^^xsd:integer)
+DataPropertyAssertion(:has_featureClass <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2642090> "H"^^xsd:string)
+DataPropertyAssertion(:has_featureCode <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2642090> "STM"^^xsd:string)
+DataPropertyAssertion(:has_modificationDate <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2642090> "2017-07-26"^^xsd:string)
+DataPropertyAssertion(:has_timeZone <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2642090> "Europe/Dublin"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2643245> (<http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2643245>)
+
+ClassAssertion(:GeonameID <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2643245>)
+ObjectPropertyAssertion(:Admin_codes_geoID <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2643245> :Admin_code_245)
+ObjectPropertyAssertion(:co_ordinates_geoID <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2643245> :Co_ordinates_245)
+ObjectPropertyAssertion(:names_of_geoID <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2643245> :Names_245)
+DataPropertyAssertion(:has_dem <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2643245> "48"^^xsd:integer)
+DataPropertyAssertion(:has_featureClass <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2643245> "H"^^xsd:string)
+DataPropertyAssertion(:has_featureCode <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2643245> "LK"^^xsd:string)
+DataPropertyAssertion(:has_modificationDate <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2643245> "2017-07-26"^^xsd:string)
+DataPropertyAssertion(:has_timeZone <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2643245> "Europe/Dublin"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649110> (<http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649110>)
+
+ClassAssertion(:GeonameID <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649110>)
+ObjectPropertyAssertion(:Admin_codes_geoID <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649110> :Admin_code_110)
+ObjectPropertyAssertion(:co_ordinates_geoID <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649110> :Co_ordinates_110)
+ObjectPropertyAssertion(:names_of_geoID <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649110> :Names_110)
+DataPropertyAssertion(:hasPopulation <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649110> "0"^^xsd:string)
+DataPropertyAssertion(:has_dem <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649110> "0"^^xsd:integer)
+DataPropertyAssertion(:has_featureClass <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649110> "H"^^xsd:string)
+DataPropertyAssertion(:has_featureCode <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649110> "STM"^^xsd:string)
+DataPropertyAssertion(:has_modificationDate <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649110> "2015-08-09"^^xsd:string)
+DataPropertyAssertion(:has_timeZone <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649110> "Europe/Dublin"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649929> (<http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649929>)
+
+ClassAssertion(:GeonameID <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649929>)
+ObjectPropertyAssertion(:Admin_codes_geoID <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649929> :Admin_code_929)
+ObjectPropertyAssertion(:co_ordinates_geoID <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649929> :Co_ordinates_929)
+ObjectPropertyAssertion(:names_of_geoID <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649929> :Names_929)
+DataPropertyAssertion(:has_dem <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649929> "-9999"^^xsd:integer)
+DataPropertyAssertion(:has_featureClass <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649929> "H"^^xsd:string)
+DataPropertyAssertion(:has_featureCode <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649929> "STM"^^xsd:string)
+DataPropertyAssertion(:has_modificationDate <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649929> "2011-10-19"^^xsd:string)
+DataPropertyAssertion(:has_timeZone <http://www.semanticweb.org/vishakha/ontologies/2022/2/untitled-ontology-7#2649929> "Europe/Dublin"^^xsd:string)
+
+
+)
